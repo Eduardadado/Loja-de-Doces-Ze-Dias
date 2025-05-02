@@ -1,0 +1,144 @@
+.header-bg {
+    background-color: var(--cor-s3);
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px 0px 20px 0px;
+}
+
+.area-login {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.area-login button {
+    padding: 0px 20px;
+    height: 30px;
+    background-color: var(--cor-p1);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+[data-menu="buttonMenu"] {
+    display: none;
+}
+
+
+
+.header-bg nav {
+    background-color: var(--cor-p4);
+    display: flex;
+    padding: 40px 0;
+}
+
+.header-bg nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px 80px;
+}
+
+.header-bg nav ul li {
+    width: 150px;
+    text-align: center;
+}
+
+
+.header-bg nav ul li:hover {
+    font-weight: 400;
+}
+
+@media (max-width: 950px){
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    .area-login img {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 800px){
+    .header {
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .logoHeader {
+        width: 100px;
+    }
+
+    .area-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    [data-menu="buttonMenu"] {
+        display: block;
+    }
+
+    .header-bg nav {
+        justify-content: flex-end;
+    }
+
+    [data-menu="list"] {
+        display: none;
+        position: absolute;
+        background: var(--cor-p4);
+        width: 160px;
+        z-index: 200;
+        padding: 20px;
+        box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, .2);
+    }
+
+    [data-menu="list"].active {
+        display: none;
+        animation: show-right .3s forwards;
+    }
+
+    .header-bg nav {
+        height: 10px;
+        padding: 0;
+    }
+
+    
+}
+
+@media (max-width: 600px){
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px){
+    .header {
+        gap: 5px;
+    }
+
+    .logoHeader {
+        width: 80px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        width: 150px;
+        text-align: center;
+    }
+
+    .area-login button{
+        height: 25px;
+    }
+}
