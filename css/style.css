@@ -6,5 +6,10 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 
+/*Home*/
+@import "./home/slider.css";
+@import "./home/banner.css";
+
+
 /* Utilidades */
 @import "./utilidades/componentes.css";

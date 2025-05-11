@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-p1);
+  flex-direction: column;
+}
+
 ul {
     padding: 0px;
     list-style: none;
