@@ -1,0 +1,48 @@
+.cards-produto {
+  max-width: 1300px;
+}
+
+.produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 80px 0;
+}
+
+.img-prod {
+  max-width: 500px;
+  position: relative;
+  left: -150px;
+}
+
+.prod-conteudo {
+  max-width: 500px;
+  max-height: 300px;
+  background-color: var(--cor-p2);
+  padding: 60px 90px;
+  border-radius: 8px;
+  position: absolute;
+  right: -150px;
+}
+
+.prod-conteudo h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.prod-conteudo p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.prod-conteudo a {
+  background-color: var(--cor-p3);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #D7A62F;
+}
+
+@media (max-width: 800px){
+  .img-prod {}
+}
